@@ -17,7 +17,7 @@ import com.nttdata.hibernate.persistence.NttDataCustomerDaoImpl;
  */
 public class NttDataCustomerManagementServiceImpl implements NttDataCustomerManagementServiceI {
 
-	/** DAO: EVERIS_HEX_PLAYER */
+	/** DAO: NTTDATA_TH1_CUSTOMER */
 	private NttDataCustomerDaoI customerDao;
 
 	/**
@@ -86,7 +86,7 @@ public class NttDataCustomerManagementServiceImpl implements NttDataCustomerMana
 		// Resultado.
 		List<NttDataCustomer> list = new ArrayList<NttDataCustomer>();
 
-		// Obtención de jugadores.
+		// Obtención de clientes.
 		list = customerDao.searchAll();
 
 		return list;
@@ -99,7 +99,7 @@ public class NttDataCustomerManagementServiceImpl implements NttDataCustomerMana
 		// Resultado.
 		List<NttDataCustomer> list = new ArrayList<NttDataCustomer>();
 
-		// Obtención de jugadores.
+		// Obtención de clientes.
 		list = customerDao.searchByNameAndSurname(name, firstSurname, secondSurname);
 
 		return list;

@@ -13,9 +13,6 @@ import org.hibernate.Session;
  */
 public class NttDataCustomerDaoImpl implements NttDataCustomerDaoI {
 
-	// /** Tipo de clase */
-	// private Class<T> entityClass;
-
 	/** Sesión de conexión a BD */
 	private Session session;
 
@@ -25,7 +22,6 @@ public class NttDataCustomerDaoImpl implements NttDataCustomerDaoI {
 	 * @param session
 	 */
 	public NttDataCustomerDaoImpl(Session session) {
-		// setEntityClass((Class<T>) ((ParameterizedType) this.getClass().getGenericSuperclass()).getActualTypeArguments()[0]);
 		this.session = session;
 	}
 

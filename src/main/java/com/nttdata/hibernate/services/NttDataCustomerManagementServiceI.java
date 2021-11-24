@@ -54,7 +54,7 @@ public interface NttDataCustomerManagementServiceI {
 	 * @param name
 	 * @param firstSurname
 	 * @param secondSurname
-	 * @return List<EverisPlayer>
+	 * @return List<NttDataCustomer>
 	 */
 	public List<NttDataCustomer> searchByName(final String name, final String firstSurname, final String secondSurname);
 
